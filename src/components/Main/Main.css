@@ -1,13 +1,13 @@
 .main-container {
   font-family: var(--font-family);
   display: flex;
-  flex-direction: column;
+  width: var(--width1280);
+  margin: 0 auto;
 }
 
 .main {
   padding-top: 60px;
   width: 90%;
-  margin: 0 auto;
 }
 
 .pagination {

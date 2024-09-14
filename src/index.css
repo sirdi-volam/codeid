@@ -6,7 +6,10 @@
   --text-color: rgb(255, 255, 255);
   --text-color-gray: rgba(255, 255, 255, 0.4);
 
-  --aside-width: 21%;
+  --width1280: 1280px;
+  --width760: 760px;
+  --width480: 480px;
+  --aside-width: 165px;
 }
 
 * {
@@ -25,7 +28,7 @@ body {
   display: flex;
   color: var(--text-color);
   margin: 0 auto;
-  width: 1440px;
+  width: 100%;
 }
 
 a {
