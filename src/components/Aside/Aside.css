@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: var(--aside-bg-color);
   color: var(--text-color);
   overflow: auto;
   position: sticky;
   position: -webkit-sticky;
-  top: 0px;
+  z-index: 9;
+  top: 50px;
+  width: var(--aside-width);
 }
 
 .profile {
@@ -16,51 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  width: calc(100% - 40px);
-}
-
-.logo {
-  display: flex;
-  align-items: start;
-}
-
-.logo img {
-  width: 60px;
-  margin-left: 20px;
-}
-
-.avatar img {
-  background: none;
-  border-radius: 50%;
-  width: 7rem;
-}
-
-.profile-name {
-  top: -15px;
-  position: relative;
-}
-
-.profile-name_text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.profile-desc_text {
-  color: rgb(222, 222, 222);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 16px;
-  margin-bottom: 10px;
-}
-
-.profile-line {
-  width: 260px;
-  height: 0;
-  border: 1px solid rgb(28, 28, 28);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 10px;
 }
 
 .about-button {
@@ -82,92 +39,67 @@
   background: rgb(237, 48, 36);
 }
 
+.myWork_btn:hover {
+  box-shadow: 0px 10px 25px -1px rgba(245, 33, 33, 1.35);
+}
+
 .sendMe_btn {
-  box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+  box-shadow: 5px 7px 17px -10px rgba(32, 84, 219, 0.35);
   background: rgb(49, 55, 201);
 }
 
-
-@media screen and (max-width: 768px) {
-  .aside-container {
-    width: 21%;
-  }
-
-  .profile {
-    top: -70px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% - 40px);
-  }
-
-  .logo img {
-    width: 100%;
-  }
-
-  .avatar img {
-    width: 70px;
-  }
-
-  .profile-name {
-    top: -2.3rem;
-    position: relative;
-  }
-
-  .profile-name_text {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 21px;
-  }
-
-  .profile-desc_text {
-    color: rgb(222, 222, 222);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16px;
-  }
-
-  .profile-social {
-    margin-top: 17px;
-  }
-
-  .profile-line {
-    width: 260px;
-    height: 0;
-    border: 1px solid rgb(28, 28, 28);
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .description-text {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18px;
-    text-align: center;
-  }
-
-  .about-button {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .about-button>button {
-    width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 25px;
-    color: var(--text-color);
-  }
-
-  .myWork_btn {
-    box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
-    background: rgb(237, 48, 36);
-  }
-
-  .sendMe_btn {
-    box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
-    background: rgb(49, 55, 201);
-  }
+.sendMe_btn:hover {
+  box-shadow: 5px 10px 25px -1px rgba(32, 84, 219, 1.35);
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+.nav-item:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(66, 66, 66);
+  border-radius: 5px;
+  /* padding: 5px; */
+}
+
+.nav-item__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  color: var(--text-color-gray);
+}
+
+.nav-link {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}

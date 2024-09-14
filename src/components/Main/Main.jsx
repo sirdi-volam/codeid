@@ -1,17 +1,17 @@
 import React from "react"
 import './Main.css'
-import { Header } from "../Header/Header"
-import { Story } from "./Story/Story"
+// import { Story } from "./Story/Story"
 import { Article } from "./Article/Article"
+import { Aside } from "../Aside/Aside"
 
 export const Main = () => {
   return (
     <>
       <container className='main-container'>
-        <Header />
+        <Aside />
         <main class="main">
 
-          <Story />
+          {/* <Story /> */}
 
           <Article />
 
